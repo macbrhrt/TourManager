@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UserInterface.AccountView">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACABAAEAACAAABAAAACAIAAGAsA4AAAAEHAMAAAAAAA=</HashCode>
+      <FileName>AccountView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserInterface.AddTourView">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAASAAABCCAACAAABCIAAoAAAAEFAAAAAAAAA=</HashCode>
+      <FileName>AddTourView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserInterface.AdminView">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>kDLAAIAgICBARBggAACQAKADqHg4EGECIHgYADgBBCQ=</HashCode>
+      <FileName>AdminView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserInterface.BookToorView">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACAgAAAAACAAABAAAACACABCIAAoAAAAEFAAAAAAAAA=</HashCode>
+      <FileName>BookToorView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserInterface.ChangePasswordView">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAASAAABAAAACAAAACIAA4AAAAEHAAAAAAAAA=</HashCode>
+      <FileName>ChangePasswordView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserInterface.RegisterView">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CCAAAAAAACAAABAAAACAAABCAAA4AAAAEXAAAAAAAAA=</HashCode>
+      <FileName>RegisterView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserInterface.ShowToursView">
+    <Position X="4.5" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABBAQAACAAAAGAgA4AAAAAHAAAQAAABA=</HashCode>
+      <FileName>ShowToursView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserInterface.StartView">
+    <Position X="1" Y="4.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAACAAABAAAAyAAAACAAAsAAAAAUAAAQAAAAA=</HashCode>
+      <FileName>StartView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserInterface.TourView">
+    <Position X="6.25" Y="4.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QCAhAAAAACAAABCAAACAAARCAAAYAAAAEGAAAAAAAAA=</HashCode>
+      <FileName>TourView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserInterface.Views">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AACQABAIACAQAAAAACCAAAACAAQAAAAAAIAAQARBBAA=</HashCode>
+      <FileName>Views.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Behavior.PHTextBox">
+    <Position X="6.25" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
