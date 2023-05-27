@@ -47,6 +47,7 @@
             label8 = new Label();
             button4 = new Button();
             button5 = new Button();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)bsData).BeginInit();
             SuspendLayout();
             // 
@@ -235,10 +236,25 @@
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 10;
+            button6.FlatStyle = FlatStyle.Popup;
+            button6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button6.Location = new Point(556, 334);
+            button6.Name = "button6";
+            button6.Size = new Size(218, 31);
+            button6.TabIndex = 35;
+            button6.Text = "Відмовити";
+            button6.UseVisualStyleBackColor = true;
+            button6.Visible = false;
+            button6.Click += button6_Click;
+            // 
             // AccountView
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(button6);
             Controls.Add(button4);
             Controls.Add(button5);
             Controls.Add(label8);
@@ -283,5 +299,6 @@
         private Label label8;
         public Button button4;
         private Button button5;
+        public Button button6;
     }
 }

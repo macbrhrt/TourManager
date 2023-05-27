@@ -76,7 +76,7 @@ namespace DomainModel
             set
             {
                 if (value > 0 && value <= 20) maxNumberPersons = value;
-                else throw new Exception("Invalid \"MaxNumberPersons\" field value");
+                else throw new Exception("Недопустиме значення поля \"Макс. кількість учасників\"");
             }
         }
         [JsonPropertyName("EventDay")]
@@ -85,7 +85,7 @@ namespace DomainModel
             set
             {
                 if (value > DateTime.Now) eventDay = value;
-                else throw new Exception("Invalid \"Date\" field value");
+                else throw new Exception("Недопустиме значення поля \"Дата\"");
             }
         }
         [JsonPropertyName("City")]
@@ -94,7 +94,7 @@ namespace DomainModel
             set
             {
                 if (value.Length > 0 && value.Length <= 50) city = value;
-                else throw new Exception("Invalid \"Сity\" field length");
+                else throw new Exception("Недопустиме значення поля \"Місто\"");
             }
         }
         [JsonPropertyName("Name")]
@@ -103,7 +103,7 @@ namespace DomainModel
             get => name; set
             {
                 if (value.Length > 0 && value.Length <= 100) name = value;
-                else throw new Exception("Invalid \"Name\" field length");
+                else throw new Exception("Недопустиме значення поля \"Назва\"");
             }
         }
         [JsonPropertyName("Description")]
@@ -111,8 +111,8 @@ namespace DomainModel
             get => description;
             set
             {
-                if (value.Length > 0 && value.Length <= 500) description = value;
-                else throw new Exception("Invalid \"Description\" field length");
+                if (value.Length > 0 && value.Length <= 3000) description = value;
+                else throw new Exception("Недопустиме значення поля \"Описання\"");
             }
         }
         [JsonPropertyName("DurationInHours")]
@@ -121,7 +121,7 @@ namespace DomainModel
             set
             {
                 if (value > 1 && value <= MaxDuration) durationInHours = value;
-                else throw new Exception("Invalid \"DurationInHours\" field value");
+                else throw new Exception("Недопустиме значення поля \"Макс. час проведення екскурсії\"");
             }
         }
         [JsonPropertyName("ParticipantsCount")]
@@ -130,7 +130,7 @@ namespace DomainModel
             set
             {
                 if (value >= 0 && value <= MaxNumberPersons) participantsCount = value;
-                else throw new Exception("Invalid \"ParticipantsCount\" field value");
+                else throw new Exception("Превишено ліміт максимального значення поля \"Кількість учасників\"");
             }
         }
         [JsonPropertyName("PricePerPerson")]
@@ -139,7 +139,7 @@ namespace DomainModel
             set
             {
                 if (value >= 0.0m && value <= 99999.99m) pricePerPerson = value;
-                else throw new Exception("Invalid \"PricePerPerson\" field value");
+                else throw new Exception("Недопустиме значення поля \"Ціна за людину\"");
             }
         }
         [JsonPropertyName("PriceNotification")]

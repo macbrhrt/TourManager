@@ -16,7 +16,7 @@ namespace DomainModel
             TourID = tourID;
             RecordingDate = recordingDate;
             Participants = participants;
-            OnCreate.Invoke("Ticket created. Details: [TourID:" + TourID + "] Дата: " + RecordingDate.ToString() + ". Кількість людей: " + Participants + ".");
+            OnCreate?.Invoke("Ticket created. Details: [TourID:" + TourID + "] Дата: " + RecordingDate.ToString() + ". Кількість людей: " + Participants + ".");
         }
 
         public Guid PersonID { get; set; }

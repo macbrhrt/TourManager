@@ -21,7 +21,7 @@ namespace DesktopApp
         private void ‚ËÈÚËToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CurrentSession.Account = new Guest();
-            for (int i = views1.tabControl1.TabPages.Count-1; i > 1; i--)
+            for (int i = views1.tabControl1.TabPages.Count - 1; i > 1; i--)
             {
                 views1.tabControl1.TabPages.RemoveAt(i);
             }
@@ -29,7 +29,7 @@ namespace DesktopApp
         }
         private void ÒÚÓ≥ÌÍ‡¿Í‡ÛÌÚÛToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(CurrentSession.Account.GetType() != typeof(Guest))
+            if (CurrentSession.Account.GetType() != typeof(Guest))
             {
                 Views views = (Views)CurrentSession.ViewInstance;
                 CurrentSession.AccountTabPageIndex = views.AddAccountTab();
@@ -56,7 +56,7 @@ namespace DesktopApp
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }           
+            }
         }
 
         private void guidesToJSONItem_Click(object sender, EventArgs e)
@@ -94,7 +94,7 @@ namespace DesktopApp
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }            
+            }
         }
 
         private void jsonToUsersItem_Click(object sender, EventArgs e)
@@ -114,7 +114,7 @@ namespace DesktopApp
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }            
+            }
         }
         private void jsonToGuidesItem_Click(object sender, EventArgs e)
         {
@@ -133,7 +133,7 @@ namespace DesktopApp
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }            
+            }
         }
         private void jsonToToursItem_Click(object sender, EventArgs e)
         {
@@ -152,7 +152,7 @@ namespace DesktopApp
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }            
+            }
         }
 
     }

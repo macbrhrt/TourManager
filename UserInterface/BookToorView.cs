@@ -25,10 +25,14 @@ namespace UserInterface
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Views views = (Views)CurrentSession.ViewInstance;
+            if (textBox2.Text == "" || textBox2.Text == null || textBox2.Text == String.Empty) return;
+            if (Convert.ToInt16(textBox2.Text) == 0) return;
             if (Convert.ToInt16(textBox2.Text) + Tour.ParticipantsCount > Tour.MaxNumberPersons)
             {
                 int temp = Tour.MaxNumberPersons - Tour.ParticipantsCount;
                 MessageBox.Show("Достигнуто ліміту для кількості учасників. Залишилось місць: " + temp, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                views.tabControl1.TabPages.RemoveAt(views.tabControl1.SelectedIndex);
                 return;
             }
             RegisteredPerson regP = (RegisteredPerson)CurrentSession.Account;
@@ -36,8 +40,10 @@ namespace UserInterface
             if (result == DialogResult.No)
             {
                 MessageBox.Show("Недостатньо коштів. Операцію бронювання екскурсії зупинено", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                views.tabControl1.TabPages.RemoveAt(views.tabControl1.SelectedIndex);
             }
             else Tour.Book(Convert.ToInt16(textBox2.Text), Tour.ID, regP);
+            views.tabControl1.TabPages.RemoveAt(views.tabControl1.SelectedIndex);
         }
 
         private void BookToorView_Load(object sender, EventArgs e)

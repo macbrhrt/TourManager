@@ -21,6 +21,7 @@ namespace UserInterface
                 listBox1.ValueMember = "FullDesc";
                 button4.Visible = false;
                 button5.Visible = false;
+                button6.Visible = true;
                 label2.Text = person.LastName + " " + person.FirstName;
                 label4.Text = person.PhoneNumber;
                 label6.Text = person.Email;
@@ -39,6 +40,7 @@ namespace UserInterface
                 listBox1.ValueMember = "FullDesc";
                 button4.Visible = true;
                 button5.Visible = true;
+                button6.Visible = false;
                 label2.Text = guide.LastName + " " + guide.FirstName;
                 label4.Text = guide.PhoneNumber;
                 label6.Text = guide.Email;
@@ -82,7 +84,7 @@ namespace UserInterface
             textBox1.Text = guide.Login;
             textBox2.Text = guide.Password;
         }
-       
+
         private void button2_Click(object sender, EventArgs e)
         {
             Views views = (Views)CurrentSession.ViewInstance;
@@ -123,6 +125,16 @@ namespace UserInterface
             RefreshList();
             Refresh();
         }
+        private void button6_Click(object sender, EventArgs e)
+        {
+            RegisteredPerson regP = (RegisteredPerson)Person;
+            TicketTour selectedTicket = (TicketTour)listBox1.SelectedItem;
+            regP.UpcomingTourTickets.Remove(selectedTicket);
+            Storage.Instance.db.Tickets.Remove(selectedTicket);
+            Views views = (Views)CurrentSession.ViewInstance;
+            RefreshList();
+            Refresh();
+        }
         public void ClearList()
         {
             listBox1.DataSource = null;
@@ -138,7 +150,8 @@ namespace UserInterface
                 listBox1.DataSource = list;
                 listBox1.ValueMember = "FullDesc";
             }
-            
+
         }
+
     }
 }

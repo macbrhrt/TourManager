@@ -12,10 +12,10 @@
             get => login; 
             set
             {
-                if (value.Length < 3 || value.Length > 40) throw new Exception("Login must be less then 40 & more than 3");
+                if (value.Length < 3 || value.Length > 40) throw new Exception("Довжина логіну має бути від 3 до 40 символів");
                 if (Storage.Instance.db.Guides.FirstOrDefault(it => it.Login == value) == null
                     || Storage.Instance.db.RegisteredPersons.FirstOrDefault(it => it.Login == value) == null) login = value;
-                else throw new Exception("Login must be unique");
+                else throw new Exception("Логін вже зайнятий");
             }
         }
         public string Password { 
@@ -24,7 +24,7 @@
             {
                 if (value.Length >= 6 && value.Length <= 40)
                     password = value;
-                else throw new Exception("Password must be less then 40 & more than 6");
+                else throw new Exception("Довжина паролю має бути від 6 до 40 символів");
             }
         }
 

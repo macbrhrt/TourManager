@@ -32,10 +32,10 @@ namespace DomainModel
             get => email;
             set
             {
-                if (value.Length < 3 || value.Length > 40) throw new Exception("Incorrect Email format");
+                if (value.Length < 3 || value.Length > 40) throw new Exception("Некоректний формат пошти");
                 if (Storage.Instance.db.Guides.FirstOrDefault(it => it.Email == value) == null
                     || Storage.Instance.db.RegisteredPersons.FirstOrDefault(it => it.Email == value) == null) email = value;
-                else throw new Exception("Login must be unique");
+                else throw new Exception("Пошта вже зайнята");
             }
         }
         public List<TicketTour> UpcomingTourTickets = new List<TicketTour>();

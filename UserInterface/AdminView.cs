@@ -77,7 +77,7 @@ namespace UserInterface
             {
                 foreach (DataGridViewRow item in this.dataGridView4.SelectedRows)
                 {
-                    bsUsers.RemoveAt(item.Index);
+                    bsTickets.RemoveAt(item.Index);
                 }
                 dataGridView4.DataSource = null;
                 bsTickets.DataSource = Storage.Instance.db.Tickets;

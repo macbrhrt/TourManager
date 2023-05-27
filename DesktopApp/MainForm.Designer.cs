@@ -70,12 +70,13 @@
             файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             файлToolStripMenuItem.Size = new Size(48, 20);
             файлToolStripMenuItem.Text = "Файл";
+            файлToolStripMenuItem.Visible = false;
             // 
             // зберегтиДаніToolStripMenuItem
             // 
             зберегтиДаніToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { UsersTojSONItem, guidesToJSONItem, toursToJSONItem });
             зберегтиДаніToolStripMenuItem.Name = "зберегтиДаніToolStripMenuItem";
-            зберегтиДаніToolStripMenuItem.Size = new Size(149, 22);
+            зберегтиДаніToolStripMenuItem.Size = new Size(180, 22);
             зберегтиДаніToolStripMenuItem.Text = "Зберегти дані";
             // 
             // UsersTojSONItem
@@ -103,7 +104,7 @@
             // 
             відкритиToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { jsonToUsersItem, jsonToGuidesItem, jsonToToursItem });
             відкритиToolStripMenuItem.Name = "відкритиToolStripMenuItem";
-            відкритиToolStripMenuItem.Size = new Size(149, 22);
+            відкритиToolStripMenuItem.Size = new Size(180, 22);
             відкритиToolStripMenuItem.Text = "Відкрити";
             // 
             // jsonToUsersItem
